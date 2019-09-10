@@ -1,0 +1,10 @@
+body {
+	background-image: url("iron-throne-background.jpg");
+        background-repeat:no-repeat;
+       background-size:cover;
+}
+
+#audio{
+    padding-left: 500px;
+    align-items: center;
+}
