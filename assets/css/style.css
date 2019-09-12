@@ -5,6 +5,48 @@ body {
 }
 
 #audio{
-    padding-left: 500px;
+    padding-left: 600px;
     align-items: center;
+    
 }
+
+#heading{
+    font-family: 'Cinzel Decorative', cursive;
+    color:white;
+    text-align: center;
+    font-size: 200%;
+}
+
+#text{
+    font-family: 'Cinzel Decorative', cursive;
+    color:white; 
+}
+
+#Lannister-sigil{
+    width:300px;
+    height:300px;
+    padding: 20px;
+    
+}
+
+#Stark-sigil{
+    width:300px;
+    height:300px;
+    padding: 5px;
+}
+
+#Baratheon-sigil{
+    width:300px;
+    height:300px;
+    padding: 5px;
+}
+
+#Targaryen-sigil{
+    width:300px;
+    height:300px;
+}
+
+#post-submit {
+    visibility: hidden;
+}
+    _
