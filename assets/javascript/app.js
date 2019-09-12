@@ -1,3 +1,5 @@
+
+
 function calculate(){
     var q1 = document.trivia.question1.value;
     var q2 = document.trivia.question2.value;
