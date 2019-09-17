@@ -1,49 +1,70 @@
-
-
-function calculate(){
-    var q1 = document.trivia.question1.value;
-    var q2 = document.trivia.question2.value;
-    var q3 = document.trivia.question3.value;
-    var q4 = document.trivia.question4.value;
-    var q5 = document.trivia.question5.value;
-    var q6 = document.trivia.question6.value;
-    var q7 = document.trivia.question7.value;
-    var q8 = document.trivia.question8.value;
     var right = 0;
+    var sec = 30;
+    var myTimer = setInterval(timer, 1000);
+ function timer() {
+    sec--;
+      document.getElementById("timer").innerHTML = "Time Remaining: " + sec;
 
-    if (question1 === "Rhaegal") {
+    if (sec === 0) {
+        calculate();
+        document.getElementById("num_correct").innerHTML = "Time is up! You have " + right + " correct answers!" 
+      right = 0;
+      
+     stopTimer();
+    }
+}
+function stopTimer(){
+    clearInterval(myTimer)
+    
+}
+function calculate(){
+    var q1 = $("input[name=question1]:checked").val()
+    var q2 = $("input[name=question2]:checked").val()
+    var q3 = $("input[name=question3]:checked").val()
+    var q4 = $("input[name=question4]:checked").val()
+    var q5 = $("input[name=question5]:checked").val()
+    var q6 = $("input[name=question6]:checked").val()
+    var q7 = $("input[name=question7]:checked").val()
+    var q8 = $("input[name=question8]:checked").val()
+
+    if (q1 === "Rhaegal") {
         right++;
     }
 
-    if (question2 === "Braavos") {
+    if (q2 === "Braavos") {
         right++;
     }
 
-    if (question3 === "Needle") {
+    if (q3 === "Needle") {
         right++;
     }
 
-    if (question4 === "Lannister") {
+    if (q4 === "Lannister") {
         right++;
     }
 
-    if (question5 === "Stark") {
+    if (q5 === "Stark") {
         right++;
     }
 
-    if (question6 === "Baratheon") {
+    if (q6 === "Baratheon") {
         right++;
     }
 
-    if (question7 === "Targaryen") {
+    if (q7 === "Targaryen") {
         right++;
     }
 
-    if (question8 === "Ghost") {
+    if (q8 === "Ghost") {
         right++;
     }
 
 
-    document.getElementById("post-submit").style.visibility="visible";
+    
     document.getElementById("num_correct").innerHTML = "You got " + right + " right answers! ";
+}
+
+function submit () {
+    calculate();
+    stopTimer();
 }

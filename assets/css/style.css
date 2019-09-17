@@ -5,7 +5,7 @@ body {
 }
 
 #audio{
-    padding-left: 600px;
+    padding-left: 520px;
     align-items: center;
     
 }
@@ -48,7 +48,13 @@ body {
     height:300px;
 }
 
-#post-submit {
-    visibility: hidden;
+
+
+    
+#button {
+    margin: 20px;
 }
-    _
+
+#num_correct {
+    color: white;
+}
