@@ -1,6 +1,8 @@
+    //variables for right answers seconds that are displayed on screen and for the timer itself.
     var right = 0;
     var sec = 30;
     var myTimer = setInterval(timer, 1000);
+ //this is the function for the timer. If the time runs out, it should run the calculate function and display the number of right answers.
  function timer() {
     sec--;
       document.getElementById("timer").innerHTML = "Time Remaining: " + sec;
@@ -13,10 +15,13 @@
      stopTimer();
     }
 }
+//This function stops the timer
 function stopTimer(){
     clearInterval(myTimer)
     
 }
+
+//This function calculates the correct answers
 function calculate(){
     var q1 = $("input[name=question1]:checked").val()
     var q2 = $("input[name=question2]:checked").val()
@@ -60,10 +65,11 @@ function calculate(){
     }
 
 
-    
+    //Submit function doesn't work without this line of code
     document.getElementById("num_correct").innerHTML = "You got " + right + " right answers! ";
 }
 
+// This function submits the game before the time runs out if you so choose.
 function submit () {
     calculate();
     stopTimer();
