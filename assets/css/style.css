@@ -1,60 +1,57 @@
 body {
-	background-image: url("iron-throne-background.jpg");
-        background-repeat:no-repeat;
-       background-size:cover;
+  background-image: url("./iron-throne-background.jpg") !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  overflow: scroll;
+  height: 100%;
+  width: 100%;
 }
 
-#audio{
-    padding-left: 520px;
-    align-items: center;
-    
+#audio {
+  padding-left: 520px;
+  align-items: center;
 }
 
-#heading{
-    font-family: 'Cinzel Decorative', cursive;
-    color:white;
-    text-align: center;
-    font-size: 200%;
+#heading {
+  font-family: "Cinzel Decorative", cursive;
+  color: white;
+  text-align: center;
+  font-size: 200%;
 }
 
-#text{
-    font-family: 'Cinzel Decorative', cursive;
-    color:white; 
-    font-size: 15px;
-   
+#text {
+  font-family: "Cinzel Decorative", cursive;
+  color: white;
+  font-size: 15px;
 }
 
-#Lannister-sigil{
-    width:300px;
-    height:300px;
-    padding: 20px;
-    
+#Lannister-sigil {
+  width: 300px;
+  height: 300px;
+  padding: 20px;
 }
 
-#Stark-sigil{
-    width:300px;
-    height:300px;
-    padding: 5px;
+#Stark-sigil {
+  width: 300px;
+  height: 300px;
+  padding: 5px;
 }
 
-#Baratheon-sigil{
-    width:300px;
-    height:300px;
-    padding: 5px;
+#Baratheon-sigil {
+  width: 300px;
+  height: 300px;
+  padding: 5px;
 }
 
-#Targaryen-sigil{
-    width:300px;
-    height:300px;
+#Targaryen-sigil {
+  width: 300px;
+  height: 300px;
 }
 
-
-
-    
 #button {
-    margin: 20px;
+  margin: 20px;
 }
 
 #num_correct {
-    color: white;
+  color: white;
 }
